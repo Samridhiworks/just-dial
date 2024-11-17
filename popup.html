@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .popup-bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
+        background: rgba(0, 0, 0, 0.7);
+    }
+
+    .backdrop {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        -webkit-filter: blur(5px);
+    }
+
+    .popup {
+        position: relative;
+        width: 600px;
+        height: 500px;
+        background: url(images/popup-img.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 10px;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        transform: translateY(-100%); 
+        opacity: 0; 
+        transition: transform 0.5s ease, opacity 0.5s ease;
+    }
+
+    .popup.show {
+        transform: translateY(0); 
+        opacity: 1; 
+    }
+
+    .popup-content {
+        padding-left: 320px;
+    }
+
+    .popup-content h3 {
+        font-size: 25px;
+        padding-bottom: 20px;
+        padding-left: 10px;
+        color: #9e2f0e;
+    }
+
+    .popup-content form input {
+        padding-left: 5px;
+        height: 30px;
+        margin-bottom: 15px;
+        width: 230px;
+    }
+
+    .popup-content form input:focus {
+        outline: 2px solid rgb(202, 202, 202);
+        border-radius: 5px;
+        border: none;
+        box-shadow: -3px -3px 4px #c7c7c7;
+    }
+
+    .popup-btn {
+        display: flex;
+        justify-content: center;
+        width: 75%;
+    }
+
+    .popup-btn button {
+        padding: 8px 20px;
+        background: #9e2f0e;
+        color: #fff;
+        font-weight: 700;
+        border: 2px solid #9e2f0e;
+        cursor: pointer;
+        box-shadow: 3px 3px 5px #acacac;
+        border-radius: 5px;
+    }
+
+    #close {
+        transform: translate(212px, -108px);
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        background: transparent;
+        cursor: pointer;
+    }
+</style>
+<body>
+
+    <button  onclick="showpopup()">Show Popup</button>
+
+    <div class="popup-bg" id="display">
+        <div class="backdrop"></div>
+        <div class="popup">
+            
+            <div class="popup-content">
+                <button id="close" onclick="hidepopup()"> X</button>
+                <h3>Login / Sign In</h3>
+                <form>
+                    <input type="text" placeholder="Name*">
+                    <input type="email" placeholder="Email Id*">
+                    <input type="tel" placeholder="Phone Number*"><br>
+                    <div class="popup-btn">
+                        <button type="button">SUBMIT</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    let displaypop = document.getElementById('display');
+    let popup = document.querySelector('.popup');
+
+    function showpopup(){
+        displaypop.style.display = "flex";
+     setInterval(()=>{
+        popup.classList.add('show')
+     },10)
+    }
+
+    function hidepopup(){
+        popup.classList.remove('show');
+      
+    }
+    </script>
+</body>
+</html>

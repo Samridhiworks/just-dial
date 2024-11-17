@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Just Dial</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/fav.jfif">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body onload="showpopup()">
+    <!-- navbar starts here -->
+     <header>
+    <nav class="navbar navbar-expand-lg navs">
+      <div class="container-fluid">
+        <div
+          class="container d-flex align-items-center"
+          style="max-width: 1300px"
+        >
+          <div class="navbar-brand">
+            <img src="images/logo.png" />
+          </div>
+          <div class="location">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" value="Laxmi Nagar, Delhi" />
+          </div>
+          <div class="search-box d-flex align-items-center">
+            <input
+              type="text"
+              placeholder="Search in Delhi"
+              aria-label="city Auto-suggest"
+            />
+            <img src="images/mic.gif" />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div class="content">
+            <img src="images/ad.png" />
+            <span style="padding-right: 10px">Advertise</span>
+            <img src="images/growth.png" />
+            <span style="padding-right: 10px">Free listing</span>
+            <img src="images/notify.png" />
+            <span class="design-1" onclick="showpopup()" style="cursor: pointer;">Login/Sign Up</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+    <!-- banner starts here -->
+    <div class="sec-2" id="banners">
+      <div class="container-fluid d-flex justify-content-center" >
+        <div class="banners d-flex">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="images/banner2.webp" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/banner3.webp" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/banner4.webp" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/banner5.webp" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/banner6.webp" />
+              </div>
+            </div>
+            <div class="swiper-button-next" style="display: none"></div>
+            <div class="swiper-button-prev" style="display: none"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="cards d-flex">
+            <div class="box1">
+              <div class="details">
+                <h3 style="font-size: 25px">B2B</h3>
+                <h4 style="font-size: 15px">Quick Quotes</h4>
+              </div>
+            </div>
+
+            <div class="box2">
+              <div class="details1">
+                <h3 style="font-size: 25px">REAL ESTATE</h3>
+                <h4 style="font-size: 15px">Get Nearest Vendors</h4>
+              </div>
+            </div>
+
+            <div class="box3">
+              <div class="details3">
+                <h3 style="font-size: 25px">DOCTORS</h3>
+                <h4 style="font-size: 15px">Book Now</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- section 3 starts here -->
+    <div class="sec-3">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row-12 d-flex justify-content-center">
+            <div class="col-md-2 d-flex justify-content-evenly all-icons">
+              <div class="images">
+                <img
+                  src="images/icon-1.png"
+                  title="Restaurants in Delhi"
+                  alt="Restaurants in Delhi"
+                />
+                <h6 class="font14 color111 fw400">Restaurants</h6>
+              </div>
+              <div class="images">
+                <img
+                  src="images/icon-2.png"
+                  title="Hotels in Delhi"
+                  alt="Hotels in Delhi"
+                />
+                <h6 class="font14 color111 fw400">Hotels</h6>
+              </div>
+            </div>
+            <div class="col-md-2 d-flex justify-content-evenly all-icons">
+              <div class="images">
+                <img
+                  src="images/icon-3.png"
+                  title="Beauty Spa in Delhi"
+                  alt="Beauty Spa in Delhi"
+                />
+                <h6 class="font14 color111 fw400">Beauty Spa</h6>
+              </div>
+              <div class="images">
+                <img
+                  src="images/icon-4.png"
+                  title="Home Decor in Delhi"
+                  alt="Home Decor in Delhi"
+                />
+                <h6 class="font14 color111 fw400">Home Decor</h6>
+              </div>
+            </div>
+            <div class="col-md-2 d-flex justify-content-evenly all-icons">
+              <div class="images">
+                <img
+                  src="images/icon-5.webp"
+                  class="spl"
+                  style="border: none"
+                  title="Wedding"
+                  alt="Wedding"
+                />
+                <h6 class="font14 color111 fw400">Wedding</h6>
+              </div>
+
+              <div class="images">
+                <img
+                  src="images/icon-6.png"
+                  title="Education in Delhi"
+                  alt="Education in Delhi"
+                />
+
+                <h6 class="font14 color111 fw400">Education</h6>
+              </div>
+            </div>
+            <div class="col-md-2 d-flex justify-content-evenly all-icons">
+              <div class="images">
+                <img
+                  src="images/icon-7.png"
+                  title="Rent & Hire in Delhi"
+                  alt="Rent & Hire in Delhi"
+                />
+                <h6 class="font14 color111 fw400">Rent & Hire</h6>
+              </div>
+              <div class="images">
+                <img
+                  src="images/icon-8.png"
+                  title="Hospitals in Delhi"
+                  alt="Hospitals in Delhi"
+                />
+                <h6 class="font14 color111 fw400">Hospitals</h6>
+              </div>
+            </div>
+            <div class="col-md-2 d-flex justify-content-evenly all-icons">
+              <div class="images">
+                <img
+                  src="images/icon-9.png"
+                  title="Contractors in Delhi"
+                  alt="Contractors in Delhi"
+                />
+                <h6 class="font14 color111 fw400">Contractors</h6>
+              </div>
+              <div class="images">
+                <img
+                  src="images/icon-10.png"
+                  title="Pet Shops in Delhi"
+                  alt="Pet Shops in Delhi"
+                />
+                <h6 class="font14 color111 fw400">Pet Shops</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec-4">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row-12 d-flex justify-content-center">
+            <div class="col-md-2 d-flex justify-content-evenly all-icons">
+              <div class="images">
+                <img
+                  src="images/icon-11.png"
+                  title="PG/ Hostels in Delhi"
+                  alt="PG/ Hostels in Delhi"
+                />
+                <h6 class="font14 color111 fw400">PG / Hostels</h6>
+              </div>
+              <div class="images">
+                <img
+                  src="images/icon-12.png"
+                  title="Estate Agent in Delhi"
+                  alt="Estate Agent in Delhi"
+                />
+                <h6 class="font14 color111 fw400">Estate Agents</h6>
+              </div>
+            </div>
+            <div class="col-md-2 d-flex justify-content-evenly all-icons">
+              <div class="images">
+                <img
+                  src="images/icon-13.png"
+                  title="Gym in Delhi"
+                  alt="Gym in Delhi"
+                />
+                <h6 class="font14 color111 fw400">Gym</h6>
+              </div>
+              <div class="images">
+                <img
+                  src="images/icon-14.png"
+                  title="Dentists in Delhi"
+                  alt="Dentists in Delhi"
+                />
+                <h6 class="font14 color111 fw400">Dentists</h6>
+              </div>
+            </div>
+            <div class="col-md-2 d-flex justify-content-evenly all-icons">
+              <div class="images">
+                <img
+                  src="images/icon-15.png"
+                  title="Online Mobile Bill Payments"
+                  alt="Online Mobile Bill Payments"
+                />
+                <h6 class="font14 color111 fw400">Mobile</h6>
+              </div>
+              <div class="images">
+                <img
+                  src="images/icon-16.png"
+                  title="Loans in Delhi"
+                  alt="Loans in Delhi"
+                />
+                <h6 class="font14 color111 fw400">Loans</h6>
+              </div>
+            </div>
+            <div class="col-md-2 d-flex justify-content-evenly all-icons">
+              <div class="images">
+                <img
+                  src="images/icon-17.png"
+                  title="Event Organisers in Delhi"
+                  alt="Event Organisers in Delhi"
+                />
+                <h6 class="font14 color111 fw400">Event Organisers</h6>
+              </div>
+              <div class="images">
+                <img
+                  src="images/icon-18.png"
+                  title="Driving Schools in Delhi"
+                  alt="Driving Schools in  Delhi"
+                />
+                <h6 class="font14 color111 fw400">Driving Schools</h6>
+              </div>
+            </div>
+            <div class="col-md-2 d-flex justify-content-evenly all-icons">
+              <div class="images">
+                <img
+                  src="images/icon-19.png"
+                  title="Packers & Movers in Delhi"
+                  alt="Packers & Movers in Delhi"
+                />
+                <h6 class="font14 color111 fw400">Packers & Movers</h6>
+              </div>
+              <div class="images">
+                <img
+                  src="images/icon-20.png"
+                  title="Courier Services in Delhi"
+                  alt="Courier Services in Delhi"
+                />
+                <h6 class="font14 color111 fw400">Courier</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- section 5 starts here -->
+    <section class="sec-5">
+      <div class="all-boxes">
+        <div class="box-1">
+          <h3>Wedding Requisites</h3>
+          <div class="all-img-text">
+            <div class="img-text">
+              <img src="images/card-1.avif" />
+              <p>Banquet Halls</p>
+            </div>
+            <div class="img-text">
+              <img src="images/card-2.webp" />
+              <p>Bridal Requisites</p>
+            </div>
+            <div class="img-text">
+              <img src="images/card-3.webp" />
+              <p>Caterers</p>
+            </div>
+          </div>
+        </div>
+        <div class="box-2">
+          <h3>Beauty & Spa</h3>
+          <div class="all-img-text">
+            <div class="img-text">
+              <img src="images/card-4.webp" />
+              <p>Beauty Parlours</p>
+            </div>
+            <div class="img-text">
+              <img src="images/card-5.avif" />
+              <p>Spa & Massages</p>
+            </div>
+            <div class="img-text">
+              <img src="images/card-6.webp" />
+              <p>Salons</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section 6 starts here -->
+    <section class="sec-5">
+      <div class="all-boxes">
+        <div class="box-1">
+          <h3>Repairs & Services</h3>
+          <div class="all-img-text">
+            <div class="img-text">
+              <img src="images/card-1.avif" />
+              <p>AC Service</p>
+            </div>
+            <div class="img-text">
+              <img src="images/card-2.webp" />
+              <p>Car Service</p>
+            </div>
+            <div class="img-text">
+              <img src="images/card-3.webp" />
+              <p>Bike Service</p>
+            </div>
+          </div>
+        </div>
+        <div class="box-2">
+          <h3>Daily Needs</h3>
+          <div class="all-img-text">
+            <div class="img-text">
+              <img src="images/card-4.webp" />
+              <p>Movies</p>
+            </div>
+            <div class="img-text">
+              <img src="images/card-5.avif" />
+              <p>Grocery</p>
+            </div>
+            <div class="img-text">
+              <img src="images/card-6.webp" />
+              <p>Electricians</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section 7 starts here -->
+    <section class="sec-7">
+      <div class="img-text-7">
+        <div class="left-box">
+          <h3>Bills & Recharge</h3>
+          <p>Pay your bills & recharge instantly with Justdial</p>
+          <a href="#">Explore More</a>
+        </div>
+        <div class="right-box">
+          <div class="all-images-7">
+            <div class="img-1">
+              <img
+                src="images/icon-15.png"
+                alt="Mobile"
+                title="Online Bill Payments & Recharge"
+                style="width: 90px"
+              />
+              <p>Mobile</p>
+            </div>
+            <div class="img-1">
+              <img
+                src="images/icon-21.png"
+                alt="Electricity"
+                title="Online Payment Of Electricity Bills"
+                style="width: 100px"
+              />
+              <p>Electricity</p>
+            </div>
+            <div class="img-1">
+              <img
+                src="images/icon-22.png"
+                alt="DTH"
+                title="Online DTH Payments & Recharge"
+                style="width: 109px"
+              />
+              <p>DTH</p>
+            </div>
+            <div class="img-1">
+              <img
+                src="images/icon-24.png"
+                alt="Water"
+                title="Online Water Payments"
+              />
+              <p>Water</p>
+            </div>
+            <div class="img-1">
+              <img
+                src="images/icon-26.png"
+                alt="Gas"
+                title="Online Gas Payments"
+                style="width: 102px"
+              />
+              <p>Gas</p>
+            </div>
+            <div class="img-1">
+              <img
+                src="images/icon-25.png"
+                alt="Insurance"
+                title="Online Insurance"
+                style="width: 96px"
+              />
+              <p>Insurance</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section 8 starts here -->
+
+    <section class="sec-7">
+      <div class="img-text-7">
+        <div class="left-box">
+          <h3>Travel Bookings</h3>
+          <p>Instant ticket bookings for your best travel experience</p>
+          <a href="#">Explore More</a>
+        </div>
+        <div class="right-box">
+          <div class="all-images-7">
+            <div class="img-1">
+              <img
+                src="images/icon-27.png"
+                alt="Mobile"
+                title="Online Bill Payments & Recharge"
+                style="width: 90px"
+              />
+              <p>Mobile</p>
+            </div>
+            <div class="img-1">
+              <img
+                src="images/icon-28.png"
+                alt="Electricity"
+                title="Online Payment Of Electricity Bills"
+                style="width: 94px"
+              />
+              <p>Electricity</p>
+            </div>
+            <div class="img-1">
+              <img
+                src="images/icon-29.png"
+                alt="DTH"
+                title="Online DTH Payments & Recharge"
+                style="width: 90px"
+              />
+              <p>DTH</p>
+            </div>
+            <div class="img-1">
+              <img
+                src="images/icon-30.png"
+                alt="Water"
+                title="Online Water Payments"
+              />
+              <p>Water</p>
+            </div>
+            <div class="img-1">
+              <img
+                src="images/icon-31.png"
+                alt="Gas"
+                title="Online Gas Payments"
+                style="width: 102px"
+              />
+              <p>Gas</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section 9 starts here -->
+    <section class="sec-7">
+      <div class="img-text-8">
+        <div class="heading">
+          <h3>
+            Explore Top Cities <sup><span class="new">NEW</span></sup>
+          </h3>
+        </div>
+
+        <div class="all-boxes-8 d-flex">
+         
+          <div class="card mb-3 me-2 content-8
+          " >
+            <div class="row ">
+              <div class="col-md-5">
+                <div class="cards-img">
+                  <img src="images/img-1.avif" title="Mumbai"  >
+                </div>
+              </div>
+              <div class="col-md-7">
+       <div class="card-body">
+        <div class="card-title"><h3>MUMBAI</h3>
+        <a href="#">Explore ></a>
+        </div>
+        </div>
+              </div>
+            </div>
+          
+        </div>
+
+        <div class="card mb-3 me-1 content-8" >
+          <div class="row ">
+            <div class="col-md-5">
+              <div class="cards-img">
+                <img src="images/img-2.avif" title="Mumbai"  >
+              </div>
+
+            </div>
+            <div class="col-md-7">
+     <div class="card-body">
+      <div class="card-title"><h3>BANGALORE</h3>
+      <a href="#">Explore ></a>
+      </div>
+      </div>
+            </div>
+          </div>
+        
+      </div>
+
+      <div class="card mb-3 me-2 content-8" >
+        <div class="row ">
+          <div class="col-md-5">
+            <div class="cards-img">
+              <img src="images/img-3.avif" title="Mumbai"  >
+            </div>
+
+          </div>
+          <div class="col-md-7">
+   <div class="card-body">
+    <div class="card-title"><h3>DELHI</h3>
+    <a href="#">Explore ></a>
+    </div>
+    </div>
+          </div>
+        </div>
+      
+    </div>
+
+    <div class="card mb-3 me-5 content-8"  >
+      <div class="row ">
+        <div class="col-md-5 ">
+          <div class="cards-img">
+          <img src="images/img-4.avif" title="Mumbai"  >
+        </div>
+        </div>
+        <div class="col-md-7">
+ <div class="card-body">
+  <div class="card-title"><h3>KOLKATA</h3>
+  <a href="#">Explore ></a>
+  </div>
+  </div>
+        </div>
+      </div>
+    
+  </div>  
+      </div>
+    </section>
+
+   
+
+
+<!-- section 10 starts here -->
+
+<section class="sec-10">
+  <h3 >Popular Searches</h3>
+  <div class="all-cards-10 d-flex">
+    <div class="back-btn" id="backward">
+      <img src="images/left.png" style="width: 30px; cursor: pointer; transform: translate(-15px, 0px);
+      position: absolute;
+      z-index: 100;" onclick="scrollleft()">
+    </div>
+
+    <div class="cards-10 ">
+      <div class="img-txt-10 " id="gallery">
+        <div class="rows d-flex">
+
+          <div class=" box-10">
+            <div class="card">
+            <div class="card-img">
+                <img src="images/img-5.webp" >
+            </div>
+            <div class="card-title"> Taxi Services</div>
+            <button>Enquire Now</button>
+        </div>
+        </div>
+
+        <div class=" box-10">
+          <div class="card">
+          <div class="card-img">
+              <img src="images/img-6.webp" >
+          </div>
+          <div class="card-title">Modular Kitchen</div>
+          <button>Enquire Now</button>
+      </div>
+      </div>
+
+      <div class=" box-10">
+        <div class="card">
+        <div class="card-img">
+            <img src="images/img-7.webp" >
+        </div>
+        <div class="card-title"> Banquet Halls</div>
+        <button>Enquire Now</button>
+    </div>
+    </div>
+
+    <div class=" box-10">
+      <div class="card">
+      <div class="card-img">
+          <img src="images/img08.webp" >
+      </div>
+      <div class="card-title"> Pet Shops</div>
+      <button>Enquire Now</button>
+  </div>
+  </div>
+
+  <div class=" box-10">
+    <div class="card">
+    <div class="card-img">
+        <img src="images/img-9.webp" >
+    </div>
+    <div class="card-title"> Mobile Phones Deals</div>
+    <button>Enquire Now</button>
+</div>
+</div>
+
+<div class=" box-10">
+  <div class="card">
+  <div class="card-img">
+      <img src="images/img-10.webp" >
+  </div>
+  <div class="card-title"> Car Rentals</div>
+  <button>Enquire Now</button>
+</div>
+</div>
+
+<div class=" box-10">
+  <div class="card">
+  <div class="card-img">
+      <img src="images/img-11.webp" >
+  </div>
+  <div class="card-title"> Restaurants</div>
+  <button>Enquire Now</button>
+</div>
+</div>
+
+<div class=" box-10">
+  <div class="card">
+  <div class="card-img">
+      <img src="images/img-12.webp" >
+  </div>
+  <div class="card-title">Travel Agents</div>
+  <button>Enquire Now</button>
+</div>
+</div>
+
+        </div>
+      </div>
+    </div>
+    <div class="forward-btn">
+      <img src="images/left.png" style="transform: rotate(180deg); width:30px; cursor: pointer;" onclick="scrollright()">
+    </div>
+  </div>
+</section>
+
+
+<!-- footer starts here -->
+
+<footer>
+  <div class="container-fluid">
+    <div class="container px-5 py-5" style="max-width: 1320px;">
+
+      <div class="row d-flex flex-direction-column">
+        
+        <div class="col-md-4 d-flex">
+
+         
+          <div class="cols-1 pe-5">
+            <h3 >Quick Links</h3>
+            <li ><a href="#" >About us</a></li>
+            <li><a href="#">Investor Relations</a></li>
+            <li><a href="#">We're hiring</a></li>
+            <li><a href="#">Customer Care</a></li>
+            <li><a href="#">Free Listing</a></li>
+            <li><a href="#">What's New</a></li>
+            <li><a href="#">Report a Bug</a></li>
+            <li><a href="#">B2B Sitemap</a></li>
+            <li><a href="#">Sitemap</a></li>
+          </div>
+
+          <div class="cols-1 pt-5">
+            <li><a href="#"> Advertise</a></li>
+            <li><a href="#">  Media</a></li>
+            <li><a href="#"> Testimonials</a></li>
+            <li><a href="#">  Feedback</a></li>
+            <li><a href="#">  Business Badge</a></li>
+            <li><a href="#">  Jd Collection</a></li>
+            <li><a href="#">  Client Success Videos</a></li>
+            <li><a href="#">  B2B India Sitemap</a></li>
+           
+          </div>
+        </div>
+        <div class="col-md-8 d-flex ">
+          
+          <div class="cols-1 pe-5">
+            <h3>Jd Verticals</h3>
+            <li><a href="#">B2B</a></li>
+            <li><a href="#">Advertising & Pr</a></li>
+            <li><a href="#">Beauty & Personal Care</a></li>
+            <li><a href="#">Electronic Component</a></li>
+            <li><a href="#">Events & Wedding</a></li>
+            <li><a href="#">Housekeeping & Facility Management</a></li>
+            <li><a href="#">Luggage Bags & Cases</a></li>
+            <li><a href="#">Public</a></li>
+            <li><a href="#">Textile & Leather</a></li>
+
+          </div>
+
+          <div class="cols-1 pt-5 pe-5">
+            <li><a href="#">All India</a></li>
+            <li><a href="#">Agriculture</a></li>
+            <li><a href="#">Business & Legal</a></li>
+            <li><a href="#">Electronics</a></li>
+            <li><a href="#">Food & Beverage</a></li>
+            <li><a href="#">Industrial Plants & Machinery</a></li>
+            <li><a href="#">Office & School Supplies</a></li>
+            <li><a href="#">Restaurant</a></li>
+            <li><a href="#">Toys & Games</a></li>
+
+          </div>
+
+          <div class="cols-1 pt-5 pe-5">
+            <li><a href="#">
+              Doctors</a></li>
+            <li><a href="#">
+              Apparel</a></li>
+            <li><a href="#">
+              Chemicals</a></li>
+            <li><a href="#">Energy</a></li>
+            <li><a href="#">
+              Furniture</a></li>
+            <li><a href="#">It Components</a></li>
+            <li><a href="#">Packaging & Printing</a></li>
+            <li><a href="#">Rubber & Plastics</a></li>
+            <li><a href="#">Transportation & Shipping</a></li>
+
+          </div>
+
+          <div class="cols-1 pt-5 ">
+            <li><a href="#">
+              Bills & Recharge</a></li>
+            <li><a href="#">
+              
+Astrology</a></li>
+            <li><a href="#">
+              Construction & Real Estate</a></li>
+            <li><a href="#" >Engineering</a></li>
+            <li><a href="#">
+              Health & Medical</a></li>
+            <li><a href="#">Jewellery</a></li>
+            <li><a href="#">Pet & Pet Supplies</a></li>
+            <li><a href="#">Security & Protection</a></li>
+            <li><a href="#">Travel</a></li>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- footer 2 starts here -->
+<div class="footer2">
+  <p>Copyrights 2008-24.  All Rights Reserved.Privacy | Terms | Infringement</p>
+</div>
+
+<!-- onload popup starts here -->
+
+<div class="popup-bg" id="display">
+  <div class="backdrop"></div>
+  <div class="popup">
+      
+      <div class="popup-content">
+          <button id="close" onclick="hidepopup()"> X</button>
+          <h3>Login / Sign In</h3>
+          <form>
+              <input type="text" placeholder="Name*">
+              <input type="email" placeholder="Email Id*">
+              <input type="tel" placeholder="Phone Number*"><br>
+              <div class="popup-btn">
+                  <button type="button">SUBMIT</button>
+              </div>
+          </form>
+      </div>
+  </div>
+</div>
+
+<!-- side popup starts here -->
+ <div class="side-pop-2">
+  <p>Advertise</p>
+ </div>
+ <div class="side-pop">
+  <p>Free Listing</p>
+ </div>
+
+ <!-- toaster starts here -->
+
+  <div class="float-toast" id="float-close" >
+    <div class="float-image" id="liveToast" >
+      <div class="float-btns" >
+      <p style="font-size: 15px; cursor: pointer;color: rgb(255, 255, 255); background: rgba(0,0,0,0.8);padding: 5px;"  onclick="closing()">X</p>
+    </div>
+      <h2>Connect with<br>
+      <span>19.8 Crore+ Buyers</span>
+    </h2>
+      <p>Grow Your Business in <br> 3 easy steps</p>
+
+      <button >List Your Business for free</button>
+    </div>
+  </div>
+
+
+<!-- MOBILE CODE STARTS HERE -->
+<div class="mb-header">
+  <div class="mb-nav d-flex justify-content-between">
+    <div class="mb-image">
+      <img src="images/logo.png">
+    </div>
+    <div class="mb-icons">
+      <button>Advertise</button>
+      <img src="images/notify.png">
+      <i class="fa-solid fa-user"></i>
+    </div>
+  </div>
+  <div class="mb-search d-flex">
+    <input type="text" placeholder="Packers and Movers">
+    <img src="images/mic.gif">
+  </div>
+</div>
+ 
+<!-- mobile section 2 starts here -->
+ <div class="all-img-mb-2">
+ <div class="mb-img-2">
+  <img src="images/icon-1.png">
+  <p>Restaurants</p>
+ </div>
+ <div class="mb-img-2">
+  <img src="images/icon-2.png">
+  <p>Hotels</p>
+ </div>
+ <div class="mb-img-2">
+  <img src="images/icon-3.png">
+  <p>Beauty Spa</p>
+ </div>
+ <div class="mb-img-2">
+  <img src="images/icon-6.png">
+  <p>Education</p>
+ </div>
+</div>
+
+<div class="all-img-mb-2">
+  <div class="mb-img-2">
+   <img src="images/icon-7.png">
+   <p>Rent & Hire</p>
+  </div>
+  <div class="mb-img-2">
+   <img src="images/icon-8.png">
+   <p>Hospitals</p>
+  </div>
+  <div class="mb-img-2">
+   <img src="images/icon-9.png">
+   <p>Contractors</p>
+  </div>
+  <div class="mb-img-2">
+   <img src="images/icon-10.png">
+   <p>Pet Shops</p>
+  </div>
+ </div>
+
+ <div class="all-img-mb-2">
+  <div class="mb-img-2">
+   <img src="images/icon-11.png">
+   <p>PG/Hostels</p>
+  </div>
+  <div class="mb-img-2">
+   <img src="images/icon-12.png">
+   <p>Estate Agents</p>
+  </div>
+  <div class="mb-img-2">
+   <img src="images/icon-13.png">
+   <p>Gym</p>
+  </div>
+  <div class="mb-img-2">
+   <img src="images/icon-16.png">
+   <p>Loans</p>
+  </div>
+ </div>   
+
+<!-- mobile banner starts here -->
+<div class="mb-banner">
+  <img src="images/mobile banner.avif">
+</div>
+
+<!-- mobile cards section starts here -->
+<div class="all-img-mb-3">
+  <div class="mb-cards ">
+  <div class="mb-img-3" style="position: relative;">
+    <h4>SHOPPING</h4>
+  </div>
+
+  <div class="mb-img-4" style="position: relative;">
+    <h4>FASHION</h4>
+  </div>
+
+  <div class="mb-img-5" style="position: relative;">
+    <h4>BEAUTY</h4>
+  </div>
+
+  <div class="mb-img-6" style="position: relative;">
+    <h4>JIO SIM</h4>
+  </div>
+
+
+</div>
+</div>
+
+<!-- mobile cards sec2 starts here -->
+<h2 style="padding-left: 22px;" class="mb-heading">Home Services</h2>
+<div class="all-img-mb-3">
+  <div class="mb-cards">
+    <div class="mb-img-7" style="position: relative;">
+      <h4>HOME <br> CLEANING</h4>
+    </div>
+  </div>
+
+  <div class="mb-cards">
+    <div class="mb-img-8" style="position: relative;">
+      <h4>PAINTERS</h4>
+    </div>
+  </div>
+
+  <div class="mb-cards">
+    <div class="mb-img-9" style="position: relative;">
+      <h4>PEST <br> CONTROL</h4>
+    </div>
+  </div>
+
+  <div class="mb-cards">
+    <div class="mb-img-10" style="position: relative;">
+      <h4>PLUMBERS</h4>
+    </div>
+  </div>
+</div>
+
+<!-- mobile banner starts here -->
+<div class="mb-banner">
+  <img src="images/mb-banner-2.avif">
+</div>
+
+<!-- mobile faqs starts here -->
+<div class="all-mb-faq">
+  <div class="mb-faq">
+    <h2 id="mb-display">One-Stop for All Local Businesses, Services, & Stores Nearby Across India</h2>
+  </div>
+  <div class="mb-content">
+    <p id="mb-show">Our service extends from providing address and contact details of business establishments around the country, to making orders and reservations for leisure, medical, financial, travel, and domestic purposes.</p>
+  </div>
+
+  <div class="mb-faq">
+    <h2 id="mb-display2">Popular Categories</h2>
+  </div>
+  <div class="mb-content">
+    <p >
+      <ul id="mb-show2">
+        <li>Education</li>
+        <li>Transportation & Shipping</li>
+        <li>Events & Weddings</li>
+        <li>Others</li>
+      </ul>
+    </p>
+  </div>
+
+  <div class="mb-faq">
+    <h2 id="mb-display3">Quick Links</h2>
+  </div>
+  <div class="mb-content">
+    <p >
+      <ul id="mb-show3">
+        <li>About Us</li>
+        <li>Advertise</li>
+        <li>We're Hiring </li>
+        <li>Testimonials</li>
+      </ul>
+    </p>
+  </div>
+</div>
+
+<!-- mobile footer starts here -->
+<div class="mb-footer" >
+  <div class="footer-column">
+    <h3 style="color: #000;">About Us</h3>
+    <ul>
+      <li><a href="#">Our Story</a></li>
+      <li><a href="#">Careers</a></li>
+      <li><a href="#">Blog</a></li>
+    </ul>
+  </div>
+  <div class="footer-column">
+    <h3 style="color: #000;">Support</h3>
+    <ul>
+      <li><a href="#">Contact Us</a></li>
+      <li><a href="#">FAQ</a></li>
+      <li><a href="#">Help Center</a></li>
+    </ul>
+  </div>
+  <div class="footer-column">
+    <h3 style="color: #000;">Follow Us</h3>
+    <ul>
+      <li><a href="#">Facebook</a></li>
+      <li><a href="#">Twitter</a></li>
+      <li><a href="#">Instagram</a></li>
+    </ul>
+  </div>
+</div>
+
+
+
+<!-- scroll to top button starts here -->
+
+<div class="scroll-top">
+  <button onclick="scrolltotop()"><i class="fa-solid fa-angle-up"></i></button>
+</div>
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+  
+
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
